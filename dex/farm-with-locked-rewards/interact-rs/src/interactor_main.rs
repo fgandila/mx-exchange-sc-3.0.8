@@ -1408,7 +1408,7 @@ async fn farm_with_no_boost_no_proxy_test(){
 }
 
 #[tokio::test]
-async fn total_farm_position_claim_with_locked_rewards_test(){
+async fn farm_position_claim_test(){
     let mut interact = ContractInteract::new().await;
     let farm_in_amount = 50_000_000;
     let first_user = Bech32Address::from_bech32_string(USER1_ADDRESS.to_string());
@@ -1427,5 +1427,5 @@ async fn total_farm_position_claim_with_locked_rewards_test(){
         )
         .await;
 
-    
+
 }
